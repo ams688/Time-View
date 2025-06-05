@@ -25,13 +25,22 @@
     <option value="Europe/London">Greenwich Mean Time (GMT)</option>
   </select>
 
-  <label for="baseTime">Enter Time in Base Time Zone:</label>
-  <input type="time" id="baseTime" step="60" />
+ <label for="baseTime">Enter Time in Base Time Zone:</label>
+<div class="time-row">
+  <input type="time" id="baseTime" />
+  <select id="basePeriod">
+    <option value="AM">AM</option>
+    <option value="PM">PM</option>
+  </select>
+</div>
+
 
   <button onclick="convertTimes()">Convert</button>
 
   <div id="results"></div>
 </div>
+  
+
 <script src="script.js"></script>
 </body>
 </html>

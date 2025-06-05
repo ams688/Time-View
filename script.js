@@ -81,3 +81,44 @@ const zones = {
 
     document.getElementById("results").innerHTML = resultHtml;
   }
+
+
+
+
+
+
+// Fill hour and minute dropdowns on page load
+window.onload = function () {
+  const hourSelect = document.getElementById('baseHour');
+  const minuteSelect = document.getElementById('baseMinute');
+
+  for (let h = 1; h <= 12; h++) {
+    const option = document.createElement('option');
+    option.value = h;
+    option.textContent = h.toString().padStart(2, '0');
+    hourSelect.appendChild(option);
+  }
+
+  for (let m = 0; m < 60; m++) {
+    const option = document.createElement('option');
+    option.value = m;
+    option.textContent = m.toString().padStart(2, '0');
+    minuteSelect.appendChild(option);
+  }
+
+  // Add event listeners to update display
+  hourSelect.addEventListener('change', updateDisplayTime);
+  minuteSelect.addEventListener('change', updateDisplayTime);
+  document.getElementById('basePeriod').addEventListener('change', updateDisplayTime);
+};
+
+function updateDisplayTime() {
+  const hour = document.getElementById('baseHour').value;
+  const minute = document.getElementById('baseMinute').value;
+  const period = document.getElementById('basePeriod').value;
+
+  if (hour && minute && period) {
+    document.getElementById('displayTime').textContent = `${hour.padStart(2, '0')}:${minute.padStart(2, '0')} ${period}`;
+  }
+}
+  
