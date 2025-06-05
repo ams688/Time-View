@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/x-icon" href="icon.png">
+<title>Time Zone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Time Zone</h1>
+
+
+<div class="card">
+
+  <label for="baseZone">Select Your Base Time Zone:</label>
+  <select id="baseZone">
+    <option value="Europe/Rome">Central European Time (CET) </option>
+    <option value="America/New_York">Eastern Standard Time (EST)</option>
+    <option value="Europe/Helsinki">Eastern European Time (EET)</option>
+    <option value="America/Chicago">Centarl Standard Time (CST)</option>
+    <option value="America/Denver">Mountain Standard Time (MST)</option>
+    <option value="Asia/Kolkata">Indian Standrad Time (IST)</option>
+    <option value="Europe/London">Greenwich Mean Time (GMT)</option>
+  </select>
+
+  <label for="baseTime">Enter Time in Base Time Zone:</label>
+  <input type="time" id="baseTime" step="60" />
+
+  <button onclick="convertTimes()">Convert</button>
+
+  <div id="results"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
