@@ -71,7 +71,7 @@ Want to suggest a new time zone or improve the UI? Pull requests are welcome! Fe
 
 ## 📄 License
 
-MIT License — use it freely and improve upon it!
+MIT License — use it freely and improve upon it!      
 
 ---
 
