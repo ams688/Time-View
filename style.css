@@ -51,18 +51,4 @@ body {
     font-size: 1.3rem;
     line-height: 1.6;
   }
-  .time-row {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.time-row input[type="time"] {
-  width: 330px; /* or 100px */
-}
-
-.time-row select {
-  width: 80px;
-}
-
 
