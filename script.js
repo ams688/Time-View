@@ -121,4 +121,8 @@ function updateDisplayTime() {
     document.getElementById('displayTime').textContent = `${hour.padStart(2, '0')}:${minute.padStart(2, '0')} ${period}`;
   }
 }
-  
+ 
+// document.addEventListener('copy', function(event) {
+//   event.clipboardData.setData('text/plain', 'U so lazy');
+//   event.preventDefault();
+// });

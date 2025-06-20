@@ -14,20 +14,20 @@
 
 <div class="card">
 
-  <label for="baseZone">Select Your Base Time Zone:</label>
-  <select id="baseZone">
+  <label class="card-text" for="baseZone">Select Your Base Time Zone:</label>
+  <select id="baseZone" class="inter-time">
     <option value="Europe/Rome">Central European Time (CET) </option>
     <option value="America/New_York">Eastern Standard Time (EST)</option>
     <option value="Europe/Helsinki">Eastern European Time (EET)</option>
-    <option value="America/Chicago">Centarl Standard Time (CST)</option>
+    <option value="America/Chicago">Central Standard Time (CST)</option>
     <option value="America/Denver">Mountain Standard Time (MST)</option>
-    <option value="Asia/Kolkata">Indian Standrad Time (IST)</option>
+    <option value="Asia/Kolkata">Indian Standard Time (IST)</option>
     <option value="Europe/London">Greenwich Mean Time (GMT)</option>
   </select>
 
- <label for="baseTime">Enter Time in Base Time Zone:</label>
+ <label class="card-text" for="baseTime">Enter Time in Base Time Zone:</label>
 <div class="time-row">
-  <input type="time" id="baseTime" />
+  <input type="time" id="baseTime" class="mopi"/>
 
   <button onclick="convertTimes()">Convert</button>
 
@@ -36,5 +36,13 @@
   
 
 <script src="script.js"></script>
+<script>
+
+document.addEventListener('copy', function(event) {
+  event.clipboardData.setData('text/plain', 'U so lazy');
+  event.preventDefault();
+});
+
+</script>
 </body>
 </html>

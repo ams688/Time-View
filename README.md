@@ -1,16 +1,9 @@
-Here’s an improved and more polished version of your `README.md` content for **Time World** — with better structure, formatting, clarity, and engaging tone:
 
----
 
 # 🌐🕒 Time World — Time Zone Converter
 
 Welcome to **Time World**, a beautifully simple yet powerful time zone converter. Effortlessly switch between global time zones with a cozy, coffee-inspired brown theme. Built with **HTML**, **CSS**, and **vanilla JavaScript** — no frameworks, just pure focus. ☕🧠
 
-![Time Converter Screenshot](https://github.com/ams688/Time_World/assets/YOUR-IMAGE-ID-HERE)
-
-<!-- 🔁 Replace `YOUR-IMAGE-ID-HERE` with your actual image ID on GitHub -->
-
----
 
 ## 🔥 Features
 
@@ -54,12 +47,6 @@ Welcome to **Time World**, a beautifully simple yet powerful time zone converter
 3. **Open `index.html` in your browser**:
 
    * You can double-click it or use a local server like Live Server (VS Code).
-
----
-
-## 📸 Screenshot
-
-> Be sure to replace the placeholder image with your actual GitHub image once uploaded!
 
 ---
 
